@@ -1,0 +1,10 @@
+C:\Users\Mark\source\repos\AI_CURS1\bin\Debug\AI_CURS1.exe.config
+C:\Users\Mark\source\repos\AI_CURS1\bin\Debug\AI_CURS1.exe
+C:\Users\Mark\source\repos\AI_CURS1\bin\Debug\AI_CURS1.pdb
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.csprojAssemblyReference.cache
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.Form1.resources
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.Properties.Resources.resources
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.csproj.GenerateResource.cache
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.csproj.CoreCompileInputs.cache
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.exe
+C:\Users\Mark\source\repos\AI_CURS1\obj\Debug\AI_CURS1.pdb
