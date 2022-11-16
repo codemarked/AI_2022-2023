@@ -1,9 +1,5 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AI_CURS1
 {
@@ -11,7 +7,6 @@ namespace AI_CURS1
     {
         public int N;
         public List<Graph> pop;
-        
 
         public AG()
         {
@@ -24,8 +19,7 @@ namespace AI_CURS1
             for (int i = 0; i < N; i++)
             {
                 Graph localG = new Graph(Engine.demo);
-                localG.DispersionRND(new PointF(Graph.random.Next(Graphic.width),
-                    Graph.random.Next(Graphic.height)),100);
+                localG.DispersionRND(new PointF(Graph.random.Next(Graphic.width), Graph.random.Next(Graphic.height)),100);
                 pop.Add(localG);
             }
         }

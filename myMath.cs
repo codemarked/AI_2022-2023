@@ -12,7 +12,6 @@ namespace AI_CURS1
     {
         public static PointF Inters(PointF A, PointF B, PointF C, PointF D )
         {
-            
             float a = B.X - A.X;
             float b = B.Y - A.Y;
             float c = D.X - C.X;
@@ -22,11 +21,10 @@ namespace AI_CURS1
             float ds = a * d - b * c;
             float dx = a * t2 - c * t1;
             float dy = b * t2 - d * t1;
-            float x = dx / ds;
-            float y = dy / ds;
-            if (ds == 0) return PointF.Empty;
-            else return new PointF(dx / ds, dy / ds);
-
+            if (ds == 0)
+                return PointF.Empty;
+            else
+                return new PointF(dx / ds, dy / ds);
         }
     }
 }

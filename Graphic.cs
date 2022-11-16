@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
-using System.Security.Cryptography.X509Certificates;
 
 namespace AI_CURS1
 {
@@ -16,7 +10,6 @@ namespace AI_CURS1
         public Bitmap bmp;
         public Color backColor = Color.AliceBlue;
         public static int width, height;
-        
 
         public void InitGraph(PictureBox display)
         {

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
 
@@ -55,7 +52,6 @@ namespace AI_CURS1
                 this.matrice[y, x] = z;
             }
             load.Close();
-            
         }
 
         public List<string> View()
@@ -94,7 +90,6 @@ namespace AI_CURS1
             }
         }
 
-
         public void NrI(Graphic handler)
         {
             for (int i = 0; i < edges.Count - 1; i++) 
@@ -114,8 +109,6 @@ namespace AI_CURS1
             foreach(Vertex vertex in vertices)
             {
                 vertex.Draw(handler);
-
-                
             }
             foreach(Edge edge in edges)
             {

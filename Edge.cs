@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Drawing;
 
 namespace AI_CURS1
@@ -33,10 +29,7 @@ namespace AI_CURS1
             PointF end = v[idxVertexEnd].mapLocation;
             handler.grp.DrawLine(Pens.Black, start, end);
             PointF center = new PointF((start.X + end.X) / 2, (start.Y + end.Y) / 2);
-            handler.grp.DrawString($"{this.cost}",new Font("Arial",10,FontStyle.Regular)
-                ,new SolidBrush(Color.Black), center);
+            handler.grp.DrawString($"{this.cost}", new Font("Arial", 10, FontStyle.Regular), new SolidBrush(Color.Black), center);
         }
-
-
     }
 }
