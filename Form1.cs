@@ -13,10 +13,7 @@ namespace AI_CURS1
     public partial class Form1 : Form
     {
         Graphic graphic;
-        PointF A = new PointF(50, 400);
-        PointF B = new PointF(300, 50);
-        PointF C = new PointF(0, 0);
-        PointF D = new PointF(450, 300);
+        AG ag;
 
         public Form1()
         {
@@ -46,8 +43,9 @@ namespace AI_CURS1
             //graphic.grp.DrawLine(Pens.Black, A, B);
             //graphic.grp.DrawLine(Pens.Black, C, D);
             //graphic.grp.DrawEllipse(Pens.Red, S.X - 5, S.Y - 5, 11, 11);
-            AG ag = new AG();
+            ag = new AG();
             ag.initPop(100);
+            ag.sortPop();
             ag.Draw(15, graphic);
             graphic.RefreshGraph();
         }
@@ -55,6 +53,16 @@ namespace AI_CURS1
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            graphic.ClearGraph();
+            ag.sortPop();
+            ag.selectPop();
+            ag.demo();
+            ag.Draw(15, graphic);
+            graphic.RefreshGraph();
         }
     }
 }

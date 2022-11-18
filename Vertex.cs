@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace AI_CURS1
 {
@@ -22,6 +23,12 @@ namespace AI_CURS1
         {
             this.idx = v.idx;
             this.mapLocation = new PointF(v.mapLocation.X, v.mapLocation.Y);
+        }
+
+
+        public float distance(Vertex B)
+        {
+            return (float)Math.Sqrt((this.mapLocation.X - B.mapLocation.X) * (this.mapLocation.X - B.mapLocation.X) + (this.mapLocation.Y - B.mapLocation.Y) * (this.mapLocation.Y - B.mapLocation.Y));
         }
 
         public void Draw(Graphic handler)
